@@ -15,7 +15,7 @@
         { id: "install-and-setup", file: "install-and-setup.html", title: "Install & set up", desc: "System requirements and first-launch setup for Maestro Studio on macOS and Maestro Vision on visionOS.", keywords: "install setup requirements macos visionos download launch welcome recent" },
         { id: "studio-workspace", file: "studio-workspace.html", title: "The Studio workspace", desc: "Maestro Studio's editing window: the source and program monitors, left panel, inspector, timeline, tools, viewer navigation and immersive guides.", keywords: "workspace window panels layout viewer source previewer inspector toolbar tools shortcuts camera orbit immersive guides overlays welcome" },
         { id: "your-first-chapter", file: "your-first-chapter.html", title: "Your first chapter", desc: "A start-to-finish tutorial: import assets, build a sequence, add actions, animate, gate, and play it live on Vision Pro.", keywords: "tutorial first chapter getting started walkthrough beginner" },
-        { id: "connecting-vision-pro", file: "connecting-vision-pro.html", title: "Connecting a Vision Pro", desc: "Pair the headset with your Mac over Bonjour and start live-iterating in under a second per save.", keywords: "connect pair bonjour wifi network headset live session tether" }
+        { id: "connecting-vision-pro", file: "connecting-vision-pro.html", title: "Connecting a Vision Pro", desc: "Pair the headset with your Mac over Bonjour and start live-iterating with every save.", keywords: "connect pair bonjour wifi network headset live session tether" }
       ]
     },
     {
@@ -76,7 +76,7 @@
     {
       section: "Live Sync & Format",
       pages: [
-        { id: "live-sync", file: "live-sync.html", title: "Live sync", desc: "How the live server works: Bonjour discovery, sub-second pushes, bidirectional edit ops, revisions, and Save on Mac.", keywords: "live sync server bonjour sse ops revision save push network" },
+        { id: "live-sync", file: "live-sync.html", title: "Live sync", desc: "How the live server works: Bonjour discovery, live pushes, bidirectional edit ops, revisions, and Save on Mac.", keywords: "live sync server bonjour sse ops revision save push network" },
         { id: "chapterscript-format", file: "chapterscript-format.html", title: "The ChapterScript format", desc: "Inside a .chapterscript bundle: chapter.json structure, the asset manifest, versioning and compatibility.", keywords: "chapterscript format file json bundle manifest sha version open" },
         { id: "troubleshooting", file: "troubleshooting.html", title: "Troubleshooting & FAQ", desc: "Fixes for connection, playback, video, import and editing issues, plus frequently asked questions.", keywords: "troubleshooting faq problem fix error connection black video help" }
       ]
