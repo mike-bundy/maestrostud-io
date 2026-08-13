@@ -442,37 +442,6 @@ body::after {
   filter: blur(30px);
   pointer-events: none;
 }
-.vp-play {
-  position: relative;
-  width: clamp(56px, 6.5vw, 76px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 1px solid rgba(143, 169, 226, 0.5);
-  background:
-    radial-gradient(circle at 32% 28%, rgba(143, 169, 226, 0.22), transparent 60%),
-    rgba(12, 17, 29, 0.6);
-  box-shadow:
-    0 0 34px rgba(143, 169, 226, 0.22),
-    inset 0 0 20px rgba(143, 169, 226, 0.1);
-  display: grid;
-  place-items: center;
-  color: var(--ink);
-  margin-bottom: 8px;
-  transition: box-shadow 0.35s ease, border-color 0.35s ease;
-}
-.vp:hover .vp-play {
-  border-color: rgba(143, 169, 226, 0.85);
-  box-shadow:
-    0 0 46px rgba(143, 169, 226, 0.38),
-    inset 0 0 24px rgba(143, 169, 226, 0.16);
-}
-.vp-play svg {
-  width: 36%;
-  height: 36%;
-  display: block;
-  transform: translateX(8%);
-  filter: drop-shadow(0 0 8px rgba(143, 169, 226, 0.5));
-}
 .vp-badge {
   position: relative;
   font-family: var(--font-mono);
@@ -1478,3 +1447,14 @@ section.block.chapter-blue {
 .chapter-blue ::selection { background: rgba(255, 255, 255, 0.3); color: #1a2b57; }
 /* the lighter field needs a touch more text weight to stay crisp */
 .chapter-blue .block-lede, .chapter-blue .feature-list li { font-weight: 400; }
+
+/* Rail stays legible over the light and blue chapter fields */
+.rail a span {
+  text-shadow: 0 1px 3px rgba(8, 15, 30, 0.7), 0 2px 10px rgba(8, 15, 30, 0.45);
+}
+.rail a i {
+  box-shadow: 0 1px 4px rgba(8, 15, 30, 0.55);
+}
+.rail a.active i {
+  box-shadow: 0 0 10px rgba(212, 219, 229, 0.7), 0 1px 4px rgba(8, 15, 30, 0.55);
+}
