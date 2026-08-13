@@ -1135,45 +1135,24 @@ a.fapp:hover img { transform: scale(1.07) rotate(-2deg); }
   .fapp, .fapp img, .fapp-arrow, .fapp-halo { transition: none; }
 }
 
-/* ---- The ask card (Chapter 08) ---- */
-.ask-card {
-  position: relative;
-  overflow: hidden;
-  margin-top: 12px;
-  max-width: 640px;
-  padding: 30px 32px 28px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-lg);
-  background: linear-gradient(165deg, rgba(27, 36, 56, 0.85), rgba(18, 26, 43, 0.95) 60%);
-}
-.ask-card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; bottom: 0;
-  width: 3px;
-  background: var(--grad-glow);
-}
-.ask-card::after {
-  content: "";
-  position: absolute;
-  top: -80px; right: -80px;
-  width: 240px; height: 240px;
-  background: radial-gradient(circle, rgba(143, 169, 226, 0.14), transparent 65%);
-  pointer-events: none;
+/* ---- The ask (Chapter 08): open, centered ---- */
+.ask {
+  margin: 16px auto 0;
+  max-width: 620px;
+  text-align: center;
 }
 .ask-line {
-  font-size: clamp(17px, 1.9vw, 21px);
+  font-size: clamp(18px, 2vw, 22px);
   line-height: 1.55;
   font-weight: 300;
   color: var(--ink-dim);
-  max-width: 34ch;
 }
 .ask-line em {
   font-style: normal;
   font-weight: 500;
   color: var(--ink);
 }
-.ask-ctas { margin-top: 24px; }
+.ask-ctas { margin-top: 26px; justify-content: center; }
 
 /* ---- Founding passes (Chapter 08): ticket-stub trio, unique to this section ---- */
 .fpasses {
