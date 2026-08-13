@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gates — Maestro Handbook</title>
+<meta name="description" content="Hold a step until the audience acts (tap, look, approach, or grab) or a timeout elapses. Gates turn a fixed timeline into a self-paced experience.">
+<link rel="icon" type="image/png" href="/assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/docs/assets/docs.css">
+</head>
+<body class="docs">
+<div id="docs-shell"></div>
+
+<main class="doc-main">
+  <article class="doc-article" data-page="gates">
+    <h1>Gates</h1>
+    <p class="doc-lede">
+      A gate holds a step at its end until someone says go, whether that's a tap, a look, a step
+      closer, or a grab. An optional timeout keeps the show moving.
+    </p>
+
+    <h2>What a gate does</h2>
+    <p>Normally a <a href="/docs/steps-and-actions.html">step</a> runs for its duration and the next
+    step begins. Add a gate and the step plays to its end, then <em>holds</em>. The scene stays alive
+    (video keeps playing, ambience continues), but advancement waits for input. Gates are how you
+    hand pacing to the audience: the timeline proposes, the gate disposes.</p>
+
+    <h2>Gate types</h2>
+    <p>Every gate has a type: the audience action that releases it. Whatever the type, the gate's
+    optional <b>timeout</b> is always a second way through, so a gated experience is self-paced but
+    never stuck.</p>
+    <ul>
+      <li><b>Tap.</b> A pinch or a tap anywhere in the scene. The universal gate: zero setup,
+      works everywhere, and the right default for "continue when ready."</li>
+      <li><b>Gaze at Entity.</b> The viewer looks at a specific entity and holds their gaze on it.
+      Pick the target from the gate editor's entity list. Perfect for attention beats: the story
+      continues when the audience has actually seen the thing.</li>
+      <li><b>Approach Entity.</b> The viewer physically walks toward a target entity. A
+      <b>trigger radius</b> (in meters, 1&nbsp;m by default) sets how close counts as arrived.
+      This is the gate for room-scale staging: scenes that unfold as the audience crosses the
+      space.</li>
+      <li><b>Grab Entity.</b> The viewer pinch-grabs the target entity. The most deliberate of
+      the four: the audience literally takes hold of the story to move it forward. Pair it with a
+      prompt so they know the object is the key.</li>
+    </ul>
+    <p>The three entity-watching types release on their target no matter where it came from, whether
+    that's a placed model, an imported asset, or even a particle emitter.</p>
+
+    <h2>Timeout and prompt</h2>
+    <p>Two optional settings round out a gate:</p>
+    <ul>
+      <li><b>Timeout.</b> When enabled, the gate auto-advances after a set number of seconds even
+      if no tap arrives (30 seconds by default when you turn it on; settable from 1 to 120).
+      Turn it off entirely for a gate that waits as long as it takes. The timeout is your safety net
+      for unattended installations and distracted audiences; the show never stalls forever.</li>
+      <li><b>Prompt.</b> Optional text the player shows the audience while the gate holds, such as
+      "Tap to continue" or "Look at the doorway and pinch." Without a prompt the hold is silent,
+      which suits pieces where the audience shouldn't feel a pause point at all.</li>
+    </ul>
+    <div class="callout tip">
+      <svg class="co-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.7.6 1.5 1.6 1.5 2.6v.5h4v-.5c0-1 .8-2 1.5-2.6A6 6 0 0012 3z"/></svg>
+      <div><p><b>Tip.</b> For ambient installations, gate with a generous timeout and no prompt.
+      Visitors who tap move at their own pace, and the piece quietly keeps cycling for those who
+      just watch.</p></div>
+    </div>
+
+    <h2>Editing gates</h2>
+    <ol class="steps">
+      <li><p><b>Find the gate flag on the ruler.</b> Steps with gates show a yellow flag on the
+      timeline ruler at the step boundary where the hold happens. It's the timeline's way of saying
+      "the show may pause here."</p></li>
+      <li><p><b>Click the flag.</b> The source step is selected and the segment inspector opens the
+      gate editor.</p></li>
+      <li><p><b>Edit the gate.</b> The <b>Gate</b> toggle adds or removes a gate on the selected
+      step (new gates hold for a tap and start with a 30-second timeout). Pick the <b>gate type</b>;
+      the entity-watching types add a <b>Target</b> picker listing the project's entities, and
+      Approach adds the <b>trigger radius</b>. Below those, enter an optional prompt and enable the
+      timeout if you want auto-advance.</p></li>
+    </ol>
+    <p>You can also reach the same editor by selecting any step in the segment inspector; the flag
+    is just the fast path. Both Maestro Studio and Maestro Vision edit gates, and changes sync live between
+    them.</p>
+
+    <h2>Gates and animation</h2>
+    <div class="callout note">
+      <svg class="co-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <div><p><b>Note.</b> While a gate holds, the segment's animation clock pauses with it — keyframe
+      curves hold their current pose rather than running ahead. A model mid-glide waits exactly where
+      it is, and the moment the gate releases, motion resumes seamlessly. You never need to
+      choreograph around "how long will they wait?" See the
+      <a href="/docs/animation-overview.html">animation overview</a>.</p></div>
+    </div>
+
+    <h2>Putting gates to work</h2>
+    <ul>
+      <li><b>Guided tours.</b> Gate the end of every stop with a short prompt.
+      Visitors linger as long as they like; the tour never rushes ahead of them.</li>
+      <li><b>Waiting for the audience.</b> Open a chapter with a gated first step ("Tap when you're
+      ready") so the experience starts on the viewer's breath, not the app launch. Add a timeout
+      for the resilient version: audience-paced, and never stuck.</li>
+      <li><b>Attention direction.</b> Gaze-gate the reveal: the narration about the artifact only
+      begins once the viewer is actually looking at it.</li>
+      <li><b>Room-scale staging.</b> Approach-gate a doorway or a far corner so the next scene
+      literally waits for the audience to arrive in it.</li>
+      <li><b>Held objects.</b> Grab-gate a key prop — the lantern, the letter, the handle — and the
+      story advances the moment it's in the viewer's hand.</li>
+    </ul>
+    <p>Gates pair naturally with <a href="/docs/presentation-modes.html">presentation-mode</a>
+    changes. Gating the step before a switch into full immersion lets the viewer choose the moment
+    they leave the real world behind.</p>
+  </article>
+</main>
+
+<script src="/docs/assets/docs.js"></script>
+</body>
+</html>
