@@ -1515,3 +1515,6 @@ section.block.chapter::before {
 #learn   { --tex: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.06; }
 /* 08 · be in the room: the theater */
 #early-access { --tex: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.08; }
+
+/* the scroll cue fades via JS as the film arrives; ease the steps */
+.scroll-cue { transition: opacity 0.2s linear; }

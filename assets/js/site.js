@@ -102,6 +102,7 @@
     let ticking = false;
     const clamp01 = (v) => (v < 0 ? 0 : v > 1 ? 1 : v);
 
+    const scrollCue = document.querySelector(".scroll-cue");
     const update = () => {
       ticking = false;
       const vh = window.innerHeight;
@@ -112,6 +113,10 @@
       }
       if (heroInner) {
         heroInner.style.setProperty("--hero-p", clamp01(window.scrollY / (vh * 0.8)).toFixed(4));
+      }
+      if (scrollCue) {
+        // gone by the time the film slot arrives (~a third of a viewport down)
+        scrollCue.style.opacity = (1 - clamp01(window.scrollY / (vh * 0.3))).toFixed(3);
       }
       for (const el of scrubs) {
         const r = el.getBoundingClientRect();
