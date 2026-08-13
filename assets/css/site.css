@@ -1408,3 +1408,10 @@ body.menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .nav-burger span, .mobile-scrim, .mobile-menu { transition: none; }
 }
+
+/* Menu-open fixes: keep the bar (and the burger's X) above the panel */
+body.menu-open .nav { z-index: 230; }
+.fapps-label span { white-space: nowrap; }
+@media (max-width: 640px) {
+  .cs-flow { white-space: normal; line-height: 1.9; }
+}
