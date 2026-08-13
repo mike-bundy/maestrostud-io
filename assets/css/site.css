@@ -1471,7 +1471,7 @@ section.block.chapter-blue {
 
 /* Chapter 07 (Learn) on the light field: docs cards go paper */
 .chapter-light .dcard {
-  background: linear-gradient(170deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.38) 60%);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.72) 60%);
   border-color: rgba(22, 32, 47, 0.16);
 }
 .chapter-light .dcard:hover {
@@ -1509,9 +1509,9 @@ section.block.chapter::before {
 #sync    { --tex: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.07; }
 /* 05 · a sky full of features */
 #everything { --tex: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.09; }
-/* 06 · the open format: raw code */
-#format  { --tex: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.06; }
+/* 06 · the open format: a typewriter, your story as readable text */
+#format  { --tex: url("https://images.unsplash.com/photo-1504691342899-4d92b50853e1?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.06; }
 /* 07 · the library */
-#learn   { --tex: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.12; }
+#learn   { --tex: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.06; }
 /* 08 · be in the room: the theater */
 #early-access { --tex: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.08; }
