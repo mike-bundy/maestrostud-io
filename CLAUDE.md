@@ -90,10 +90,10 @@ buttons is literal `#14102e`. Use the CSS variables for anything new.
 ```
 index.html                Homepage: chapter-structured scroll experience (nav,
                           progress bar, chapter rail scroll-spy, hero w/ canvas,
-                          film video slots, marquee, chapters 01–09, final CTA,
+                          film video slots, marquee, chapters 01–08, final CTA,
                           footer). Anchors: #studio #spatial #animation #sync
-                          #particles #everything #format #learn #early-access.
-                          FIVE VIDEO PLACEHOLDERS remain (see Homepage videos).
+                          #everything #format #learn #early-access.
+                          FOUR VIDEO PLACEHOLDERS remain (see Homepage videos).
 404.html                  Themed not-found page (reuses hero canvas)
 assets/css/site.css       ALL design tokens + homepage styles
 assets/js/site.js         Homepage interactions (scroll scrubbing, reveals,
@@ -122,11 +122,12 @@ filename); add `{ id, file, title, desc, keywords }` to the right section of
 
 ## Homepage videos (the repeatable pipeline)
 
-Six film slots. As of 2026-08-12 the **studio-timeline** slot temporarily shows the
-product film (assets `film.*`, moved from the hero slot at the user's request) until
-a dedicated timeline capture exists. Placeholders: **film** (hero), **spatial-editing**,
-**graph-editor**, **live-sync**, **particles** (footage specs in each slot's HTML
-comment). A new hero capture should use a fresh slug since `film.*` is occupied.
+Five film slots (the particles slot was removed with Chapter 05 · Particles on
+2026-08-12). The **studio-timeline** slot temporarily shows the product film (assets
+`film.*`, moved from the hero slot at the user's request) until a dedicated timeline
+capture exists. Placeholders: **film** (hero), **spatial-editing**, **graph-editor**,
+**live-sync** (footage specs in each slot's HTML comment). A new hero capture should
+use a fresh slug since `film.*` is occupied.
 
 To fill a slot: drop the raw capture in `videos/` (gitignored, never commit masters),
 run `scripts/encode-web-video.sh videos/<capture> <slug>` (optional third arg = poster
