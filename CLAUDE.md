@@ -117,9 +117,11 @@ filename); add `{ id, file, title, desc, keywords }` to the right section of
 
 ## Homepage videos (the repeatable pipeline)
 
-Six film slots; **film** (hero) is filled. Still placeholders: **studio-timeline**,
-**spatial-editing**, **graph-editor**, **live-sync**, **particles** (footage specs in
-each slot's HTML comment).
+Six film slots. As of 2026-08-12 the **studio-timeline** slot temporarily shows the
+product film (assets `film.*`, moved from the hero slot at the user's request) until
+a dedicated timeline capture exists. Placeholders: **film** (hero), **spatial-editing**,
+**graph-editor**, **live-sync**, **particles** (footage specs in each slot's HTML
+comment). A new hero capture should use a fresh slug since `film.*` is occupied.
 
 To fill a slot: drop the raw capture in `videos/` (gitignored, never commit masters),
 run `scripts/encode-web-video.sh videos/<capture> <slug>` (optional third arg = poster
