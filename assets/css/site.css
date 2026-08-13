@@ -18,7 +18,7 @@
   --indigo-deep: #232c44;
   --grad-glow: linear-gradient(120deg, #8fa9e2 0%, #d4dbe5 100%);
   --grad-aurora: linear-gradient(120deg, #5e7fbe 0%, #8fa9e2 55%, #d4dbe5 100%);
-  --font-display: "Fraunces", Georgia, serif;
+  --font-display: "Unbounded", system-ui, sans-serif;
   --font-body: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --radius: 14px;
@@ -280,15 +280,15 @@ body::after {
 }
 .hero h1 {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(52px, 9.5vw, 132px);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
-  max-width: 14ch;
+  font-weight: 500;
+  font-size: clamp(36px, 6.6vw, 88px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  max-width: 16ch;
 }
 .hero h1 em {
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
   background: var(--grad-aurora);
   -webkit-background-clip: text;
   background-clip: text;
@@ -548,14 +548,15 @@ section.block.tint-peri { background: linear-gradient(180deg, transparent, rgba(
 }
 .block h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(38px, 5.6vw, 72px);
-  line-height: 1.06;
-  letter-spacing: -0.015em;
-  max-width: 22ch;
+  font-weight: 500;
+  font-size: clamp(26px, 3.9vw, 50px);
+  line-height: 1.16;
+  letter-spacing: -0.005em;
+  max-width: 24ch;
 }
 .block h2 em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
   background: var(--grad-glow);
   -webkit-background-clip: text;
   background-clip: text;
@@ -845,13 +846,14 @@ h2.in-view .w { opacity: 1; transform: none; }
 .final-cta h2 {
   position: relative;
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(42px, 7vw, 92px);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: clamp(28px, 4.8vw, 62px);
+  line-height: 1.14;
+  letter-spacing: -0.005em;
 }
 .final-cta h2 em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
   background: var(--grad-aurora);
   -webkit-background-clip: text;
   background-clip: text;
