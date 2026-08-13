@@ -68,10 +68,15 @@ format/runtime.
 - Docs voice: second person, present tense, for creative authors not programmers. No
   Swift type names or source paths (live-sync + format pages may show HTTP/JSON).
 
-## Theme (derived from the real app icon — don't invent new colors)
+## Theme (don't invent new colors)
 
-Palette sampled from the app icon (`assets/icon-256.png` / `icon-512.png`, an open
-storybook with a glowing portal). The icon is the brand mark everywhere; no SVG logo.
+The indigo palette was originally sampled from the retired storybook app icon. On
+2026-08-12 the icon was replaced with the current mark (`assets/icon-256.png` /
+`icon-512.png`, a navy macOS tile with a silver M monogram around a wireframe cube,
+from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`); the site
+palette deliberately stayed. The icon is the brand mark everywhere; no SVG logo.
+Exception to the palette rule: the `.cs-band` ChapterScript guest section hardcodes
+the sister site's slate/mint tokens on purpose.
 
 Tokens in `:root` of `assets/css/site.css`: backgrounds `--bg #0d0c1d`, `--bg-2
 #14122a`, `--bg-3 #1d1a38`; text `--ink #f0ecf9`, `--ink-dim #a49ec6`, `--ink-faint
