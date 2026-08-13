@@ -228,3 +228,23 @@
     frame();
   }
 })();
+
+/* ---- Mobile menu ---- */
+(() => {
+  const burger = document.querySelector('.nav-burger');
+  const menu = document.getElementById('mobile-menu');
+  const scrim = document.getElementById('mobile-scrim');
+  if (!burger || !menu || !scrim) return;
+  const setOpen = (open) => {
+    burger.classList.toggle('open', open);
+    menu.classList.toggle('open', open);
+    scrim.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+  burger.addEventListener('click', () => setOpen(!menu.classList.contains('open')));
+  scrim.addEventListener('click', () => setOpen(false));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+})();

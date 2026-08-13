@@ -1324,3 +1324,87 @@ a.fapp:hover img { transform: scale(1.07) rotate(-2deg); }
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
+
+/* ---- Mobile menu ---- */
+.nav-burger {
+  display: none;
+  position: relative;
+  z-index: 220;
+  width: 42px; height: 42px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: rgba(18, 26, 43, 0.6);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.nav-burger span {
+  display: block;
+  width: 17px; height: 1.8px;
+  border-radius: 2px;
+  background: var(--ink);
+  transition: transform 0.3s var(--ease-out), opacity 0.25s ease;
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(6.8px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.8px) rotate(-45deg); }
+.mobile-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 190;
+  background: rgba(6, 9, 16, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.mobile-scrim.open { opacity: 1; pointer-events: auto; }
+.mobile-menu {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  z-index: 210;
+  width: min(320px, 84vw);
+  padding: 104px 34px 40px;
+  display: none;
+  flex-direction: column;
+  background: rgba(18, 26, 43, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-left: 1px solid var(--line-strong);
+  transform: translateX(105%);
+  transition: transform 0.42s var(--ease-out);
+}
+.mobile-menu.open { transform: none; }
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  padding: 16px 2px;
+  border-bottom: 1px solid var(--line);
+}
+.mobile-menu a.nav-cta {
+  margin-top: 28px;
+  border: none;
+  border-radius: 100px;
+  background: var(--grad-glow);
+  color: #101623;
+  text-align: center;
+  padding: 14px 22px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+}
+body.menu-open { overflow: hidden; }
+@media (max-width: 900px) {
+  .nav-burger { display: flex; }
+  .mobile-menu { display: flex; }
+  .nav-links .nav-cta { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-burger span, .mobile-scrim, .mobile-menu { transition: none; }
+}
