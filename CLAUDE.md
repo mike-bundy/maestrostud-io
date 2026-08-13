@@ -75,10 +75,12 @@ Palette re-derived 2026-08-12 from the current app icon (`assets/icon-256.png` /
 from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`): all-cool
 navy / steel / silver, no warm tones. The icon is the brand mark everywhere; no SVG
 logo. Exceptions to the palette rule: the `.cs-band` ChapterScript guest section
-hardcodes the sister site's slate/mint tokens on purpose, and chapters 01/03/05
-use `.chapter-light` (steel-blue field, scoped variable overrides that flip ink,
-accents and gradients; note the section re-declares `color` so descendants
-re-resolve the scoped ink).
+hardcodes the sister site's slate/mint tokens on purpose; chapter 01 uses
+`.chapter-blue` (rich film-blue field, white ink) and chapters 03/05 use
+`.chapter-light` (pale steel field, dark ink). Both are scoped variable
+overrides that flip ink, accents and gradients, and both re-declare `color`
+so descendants re-resolve the scoped ink. Three section moods total: dark
+navy, film blue, steel light.
 
 Tokens in `:root` of `assets/css/site.css` (variable NAMES are legacy from the old
 indigo theme; values are current): backgrounds `--bg #0c111d`, `--bg-2 #121a2b`,

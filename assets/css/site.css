@@ -1452,3 +1452,25 @@ section.block.chapter-light {
 }
 /* selection + marquee-adjacent hairlines read on light */
 .chapter-light ::selection { background: rgba(61, 94, 166, 0.25); color: var(--ink); }
+
+/* ---- Blue chapter (01): the third section style, field in the em-word blue ---- */
+section.block.chapter-blue {
+  background: linear-gradient(180deg, #35519c 0%, #2a4280 100%);
+  /* re-declare so descendants re-resolve the scoped ink (same trick as .chapter-light) */
+  color: var(--ink);
+  --ink: #f3f6fb;
+  --ink-dim: #cbd6ee;
+  --ink-faint: #9fadd4;
+  --line: rgba(240, 246, 255, 0.16);
+  --line-strong: rgba(240, 246, 255, 0.3);
+  --peri: #d3e0fb;
+  --gold: #eef2f9;
+  --sky: #b2c7f0;
+  --grad-glow: linear-gradient(120deg, #dce8fc 0%, #ffffff 100%);
+  --grad-aurora: linear-gradient(120deg, #bed2f6 0%, #e7eefc 55%, #ffffff 100%);
+}
+.chapter-blue .film-frame {
+  box-shadow: 0 32px 80px rgba(8, 15, 35, 0.55);
+  border-radius: var(--radius-lg);
+}
+.chapter-blue ::selection { background: rgba(255, 255, 255, 0.3); color: #1a2b57; }
