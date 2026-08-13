@@ -155,14 +155,13 @@
              timeline (clip lands pre-trimmed) → drag a clip to move it → drag
              an action chip from the library onto a track → scrub the playhead
              and watch the viewport follow. 16:9 capture at Retina resolution. -->
-        <!-- Currently showing the product film (encoded from videos/herovid.mov,
-             slug: film) until a dedicated timeline capture exists. -->
-        <video class="film-video" poster="/assets/video/film-poster.jpg"
-               autoplay muted loop playsinline
-               aria-label="Maestro product film">
-          <source src="/assets/video/film.av1.mp4" type='video/mp4; codecs="av01.0.08M.10"'>
-          <source src="/assets/video/film.mp4" type="video/mp4">
-        </video>
+        <div class="vp" role="img" aria-label="Placeholder for a Maestro Studio timeline screen recording">
+          <div class="vp-glow"></div>
+          <div class="vp-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 6.2v11.6a.7.7 0 001.07.6l9.2-5.8a.7.7 0 000-1.2l-9.2-5.8A.7.7 0 009 6.2z"/></svg></div>
+          <span class="vp-badge">Video placeholder</span>
+          <p class="vp-what">Maestro Studio · timeline in motion</p>
+          <p class="vp-spec">15–25s screen capture · drag, trim, drop an action, scrub · 16:9</p>
+        </div>
       </div>
     </figure>
 
@@ -212,13 +211,14 @@
              Suggested beats: gaze-highlight an entity → pinch-drag it through
              the room → tap a gizmo mode and drag a rotation ring → grab a motion
              trail orb and reshape the path. Record at 16:9 if possible. -->
-        <div class="vp" role="img" aria-label="Placeholder for an in-headset editing recording">
-          <div class="vp-glow"></div>
-          <div class="vp-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 6.2v11.6a.7.7 0 001.07.6l9.2-5.8a.7.7 0 000-1.2l-9.2-5.8A.7.7 0 009 6.2z"/></svg></div>
-          <span class="vp-badge">Video placeholder</span>
-          <p class="vp-what">Maestro Vision · editing in the room</p>
-          <p class="vp-spec">15–25s in-headset capture · gaze + pinch, gizmo drag, motion trail · 16:9</p>
-        </div>
+        <!-- Currently showing the product film (encoded from videos/herovid.mov,
+             slug: film) until a dedicated in-headset capture exists. -->
+        <video class="film-video" poster="/assets/video/film-poster.jpg"
+               autoplay muted loop playsinline
+               aria-label="Maestro product film">
+          <source src="/assets/video/film.av1.mp4" type='video/mp4; codecs="av01.0.08M.10"'>
+          <source src="/assets/video/film.mp4" type="video/mp4">
+        </video>
       </div>
     </figure>
 
