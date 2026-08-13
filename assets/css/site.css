@@ -1509,8 +1509,6 @@ section.block.chapter::before {
 #sync    { --tex: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.07; }
 /* 05 · a sky full of features */
 #everything { --tex: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.09; }
-/* 06 · the open format: sheet music, the score any player can perform */
-#format  { --tex: url("https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.07; }
 /* 07 · the library */
 #learn   { --tex: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=55"); --tex-o: 0.06; }
 /* 08 · be in the room: the theater */
