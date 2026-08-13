@@ -10,7 +10,7 @@ locally by Laravel Herd at **http://maestrostudio.test**. Migrated 2026-08-12 fr
 retired chapter.vision site (repo `~/Herd/chaptervision`, kept for history).
 
 Pure static HTML/CSS/JS — **no build step, no framework, no package.json**. The only
-external dependency is Google Fonts (Fraunces, Outfit, JetBrains Mono). Deploys to
+external dependency is Google Fonts (Unbounded, Outfit, JetBrains Mono). Deploys to
 GitHub Pages from `main` root; `CNAME` pins maestrostud.io, `.nojekyll` protects
 `docs/_TEMPLATE.html`. All links are root-relative, so the site will NOT work from a
 subdirectory. Serve `404.html` for not-found routes.
@@ -74,15 +74,18 @@ Palette re-derived 2026-08-12 from the current app icon (`assets/icon-256.png` /
 `icon-512.png`, a navy macOS tile with a silver M monogram around a wireframe cube,
 from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`): all-cool
 navy / steel / silver, no warm tones. The icon is the brand mark everywhere; no SVG
-logo. Exception to the palette rule: the `.cs-band` ChapterScript guest section
-hardcodes the sister site's slate/mint tokens on purpose.
+logo. Exceptions to the palette rule: the `.cs-band` ChapterScript guest section
+hardcodes the sister site's slate/mint tokens on purpose, and chapters 01/03/05
+use `.chapter-light` (steel-blue field, scoped variable overrides that flip ink,
+accents and gradients; note the section re-declares `color` so descendants
+re-resolve the scoped ink).
 
 Tokens in `:root` of `assets/css/site.css` (variable NAMES are legacy from the old
 indigo theme; values are current): backgrounds `--bg #0c111d`, `--bg-2 #121a2b`,
 `--bg-3 #1b2438`; text `--ink #eef1f6`, `--ink-dim #9ba5b6`, `--ink-faint #5f6a7e`;
 accents `--peri #8fa9e2` (steel-ice, primary), `--gold #d4dbe5` (platinum silver,
 highlight), `--sky #5e7fbe` (slate blue); gradients `--grad-glow` (steel→silver,
-CTAs), `--grad-aurora` (slate→steel→silver, gradient text). Fonts: Fraunces
+CTAs), `--grad-aurora` (slate→steel→silver, gradient text). Fonts: Unbounded
 (display), Outfit (body), JetBrains Mono. Dark text on gradient buttons is literal
 `#101623`. Use the CSS variables for anything new.
 

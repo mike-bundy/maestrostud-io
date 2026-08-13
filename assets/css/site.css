@@ -1415,3 +1415,40 @@ body.menu-open .nav { z-index: 230; }
 @media (max-width: 640px) {
   .cs-flow { white-space: normal; line-height: 1.9; }
 }
+
+/* ---- Light chapters (01, 03, 05): flipped palette for section rhythm ----
+   Scoped variable overrides flip most components automatically. */
+section.block.chapter-light {
+  background: linear-gradient(180deg, #b9c5d8 0%, #a4b3c9 100%);
+  /* re-declare color so descendants re-resolve the scoped ink instead of
+     inheriting body's computed light value */
+  color: var(--ink);
+  --ink: #16202f;
+  --ink-dim: #43516a;
+  --ink-faint: #67758e;
+  --line: rgba(22, 32, 47, 0.13);
+  --line-strong: rgba(22, 32, 47, 0.24);
+  --peri: #3d5ea6;
+  --gold: #4c5a75;
+  --sky: #33518f;
+  --grad-glow: linear-gradient(120deg, #3d5ea6 0%, #64789c 100%);
+  --grad-aurora: linear-gradient(120deg, #33518f 0%, #4a68b0 55%, #5c7392 100%);
+}
+/* cards go paper-white on the light field; the dark theme's glow
+   overlay would wash out titles here, so it's disabled */
+.chapter-light .gcard {
+  background: rgba(255, 255, 255, 0.42);
+  border-color: rgba(22, 32, 47, 0.16);
+}
+.chapter-light .gcard:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.chapter-light .gcard::before { display: none; }
+/* the video placeholder stays a dark screen (it stands in for footage),
+   framed so it reads deliberate on the light field */
+.chapter-light .film-frame {
+  box-shadow: 0 30px 70px rgba(22, 32, 47, 0.35);
+  border-radius: var(--radius-lg);
+}
+/* selection + marquee-adjacent hairlines read on light */
+.chapter-light ::selection { background: rgba(61, 94, 166, 0.25); color: var(--ink); }
