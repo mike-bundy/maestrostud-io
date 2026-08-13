@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Steps &amp; actions — Maestro Handbook</title>
-<meta name="description" content="The timing model inside a segment: steps are timed beats, actions are the things that happen, and timeline clips are derived from action pairs.">
+<meta name="description" content="The timing model inside a sequence: steps are timed beats, actions are the things that happen, and timeline clips are derived from action pairs.">
 <link rel="icon" type="image/png" href="/assets/icon-256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +19,13 @@
   <article class="doc-article" data-page="steps-and-actions">
     <h1>Steps &amp; actions</h1>
     <p class="doc-lede">
-      Steps are the timed beats of a segment; actions are what happens during them. Everything you
+      Steps are the timed beats of a sequence; actions are what happens during them. Everything you
       see on the timeline flows from this one idea.
     </p>
 
     <h2>Steps: the beats of a scene</h2>
-    <p>A <a href="/docs/chapters-and-segments.html">segment</a> is divided into an ordered sequence
-    of steps. Each step has a duration (as short as 0.1 seconds), and the segment's total length is
+    <p>A <a href="/docs/chapters-and-sequences.html">sequence</a> is divided into an ordered sequence
+    of steps. Each step has a duration (as short as 0.1 seconds), and the sequence's total length is
     simply its steps laid end to end. Step boundaries appear as vertical guides on the timeline
     ruler, and each interior boundary is a draggable handle, so retiming a beat is a matter of
     sliding its edge.</p>
@@ -77,7 +77,7 @@
       zero) closes it.</li>
       <li>A <b>play video</b> opens a clip on its panel; a <b>stop video</b> closes it.</li>
       <li>A <b>play audio</b> opens a clip on its channel; a <b>stop audio</b> closes it.</li>
-      <li>Anything still open when the segment ends is drawn as running to the end.</li>
+      <li>Anything still open when the sequence ends is drawn as running to the end.</li>
     </ul>
     <p>So when you drag a clip's left edge, you're retiming the opening action; the right edge, the
     closing action; the clip body, both together. The timeline is a live view of your action stream
@@ -97,7 +97,7 @@
       moves into the neighboring step automatically, so you think in seconds, not in steps.</li>
       <li><b>Right-click a clip</b> for quick moves: duplicate it slightly later, delete its opening
       action, or jump to it in the inspector.</li>
-      <li><b>Move or duplicate whole steps</b> from the segment inspector's step list to reorder or
+      <li><b>Move or duplicate whole steps</b> from the sequence inspector's step list to reorder or
       repeat a beat with everything it contains. Both editors, Maestro Studio and Maestro Vision, support step
       and action move/duplicate, and changes sync live between them.</li>
     </ul>
@@ -111,7 +111,7 @@
       <svg class="co-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.7.6 1.5 1.6 1.5 2.6v.5h4v-.5c0-1 .8-2 1.5-2.6A6 6 0 0012 3z"/></svg>
       <div><p><b>Tip.</b> Scrub the ruler constantly. Clicking anywhere shows exactly what's on
       screen at that moment, even while stopped, so you can verify a beat without playing the whole
-      segment.</p></div>
+      sequence.</p></div>
     </div>
   </article>
 </main>

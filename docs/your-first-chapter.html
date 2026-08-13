@@ -24,7 +24,7 @@
     </p>
 
     <h2>What you'll make</h2>
-    <p>In about twenty minutes you'll author a single-segment chapter in Maestro Studio: a
+    <p>In about twenty minutes you'll author a single-sequence chapter in Maestro Studio: a
     3D object appears in the scene, audio plays, the object glides to a new position, the experience
     waits for the viewer to tap, and everything happens inside a 360° video backdrop. Along the way
     you'll touch every core surface of the editor: the asset sidebar, the viewport, the timeline,
@@ -48,11 +48,11 @@
       importing and organizing in <a href="/docs/assets-and-folders.html">Assets &amp;
       folders</a>.)</p></li>
 
-      <li><p><b>Meet the default segment.</b> Every new chapter starts with one segment (a scene),
-      shown as a tab at the top of the timeline. It's marked as the default segment, which means
-      it's where playback begins. A segment holds timed steps, and the timeline you're looking at is
-      that segment's contents. One segment is plenty for today; see
-      <a href="/docs/chapters-and-segments.html">Chapters &amp; segments</a> for the bigger
+      <li><p><b>Meet the default sequence.</b> Every new chapter starts with one sequence (a scene),
+      shown as a tab at the top of the timeline. It's marked as the default sequence, which means
+      it's where playback begins. A sequence holds timed steps, and the timeline you're looking at is
+      that sequence's contents. One sequence is plenty for today; see
+      <a href="/docs/chapters-and-sequences.html">Chapters &amp; sequences</a> for the bigger
       picture.</p></li>
 
       <li><p><b>Place the model in the viewport.</b> Select your <code>.usdz</code> asset in the
@@ -66,7 +66,7 @@
       Scene category and drag it onto your model's row in the timeline's Scene section, right at the
       start. Reveal fades an entity in; you've just authored your first action. Notice a clip
       appears on the track: clips in Maestro are derived from actions; this one runs from
-      your Reveal until the entity is hidden or the segment ends. (See
+      your Reveal until the entity is hidden or the sequence ends. (See
       <a href="/docs/steps-and-actions.html">Steps &amp; actions</a>.)</p></li>
 
       <li><p><b>Add narration with Play Audio.</b> Drag a <b>Play Audio</b> chip from the Audio
@@ -83,14 +83,14 @@
       <li><p><b>Make the model move.</b> Drag a <b>Move</b> chip onto the model's row a few seconds
       in, and give it a destination and duration in the inspector. The model now glides from its
       resting spot to the new position during playback. For richer motion, Maestro also
-      supports keyframe animation: pose keys that live on the segment itself, edited in the
-      Animation card of the segment inspector with a full curve editor. That's a deeper topic;
+      supports keyframe animation: pose keys that live on the sequence itself, edited in the
+      Animation card of the sequence inspector with a full curve editor. That's a deeper topic;
       when you're ready, read the <a href="/docs/animation-overview.html">animation
       overview</a>.</p></li>
 
       <li><p><b>Hold for a tap: add a gate.</b> Suppose you want the experience to wait until the
       viewer is ready before the move happens. Select the step where the move begins (steps are the
-      timed beats a segment is divided into; their boundaries show on the ruler). In the segment
+      timed beats a sequence is divided into; their boundaries show on the ruler). In the sequence
       inspector, turn on <b>Gate</b> for the <em>previous</em> step. Now that step holds at its
       end until the viewer taps, and you can add a prompt like "Tap to continue" that the player
       shows while waiting. A yellow gate flag appears on the ruler. Gates can also take a timeout
@@ -98,7 +98,7 @@
 
       <li><p><b>Go immersive with a 360° backdrop.</b> First, mark your video as a backdrop:
       right-click it in the asset sidebar and choose <b>Mark as Backdrop</b>, and it moves into the
-      sidebar's Backdrops section. Then select the segment and, in the segment inspector, set the
+      sidebar's Backdrops section. Then select the sequence and, in the sequence inspector, set the
       presentation mode to <b>Immersive</b>. A backdrop picker appears: choose <b>Video</b>, pick
       your clip, and set the field to 360° with loop on. Click the globe button in the viewport's
       top-right corner to preview the video sphere right in the editor. Full details in
@@ -134,7 +134,7 @@
 
     <h2>Where to next</h2>
     <ul>
-      <li><a href="/docs/chapters-and-segments.html">Chapters &amp; segments</a>: structure a
+      <li><a href="/docs/chapters-and-sequences.html">Chapters &amp; sequences</a>: structure a
       longer experience out of multiple scenes.</li>
       <li><a href="/docs/steps-and-actions.html">Steps &amp; actions</a>: the timing model behind
       everything you just dragged.</li>

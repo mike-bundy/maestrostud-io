@@ -41,8 +41,8 @@
             duration</td><td>A marker inside the clip's span</td></tr>
       </tbody>
     </table>
-    <p>A channel with no Stop simply plays to the end of the segment; the timeline shows
-    its clip running to the segment's edge. Full parameter details are in the
+    <p>A channel with no Stop simply plays to the end of the sequence; the timeline shows
+    its clip running to the sequence's edge. Full parameter details are in the
     <a href="/docs/actions-reference.html">actions reference</a>.</p>
 
     <h2>Play Audio's parameters</h2>
@@ -53,7 +53,7 @@
       doesn't silently create a stray one.</li>
       <li><b>Volume.</b> 0 to 1. This is the channel's starting level; Fade Audio can move
       it later.</li>
-      <li><b>Loop.</b> When on, the file repeats until a Stop Audio (or the segment ends).
+      <li><b>Loop.</b> When on, the file repeats until a Stop Audio (or the sequence ends).
       Ideal for ambience beds.</li>
     </ul>
     <p>You can adjust volume and loop right from the timeline, too. Expand the clip's row in
@@ -63,7 +63,7 @@
     <h2>Hearing your mix in the editor</h2>
     <p>Audio in Maestro Studio is audible, and auditioning is built for editing. Playback
     runs the mix at natural rate; scrubbing plays the moment under the playhead and holds,
-    so you can drag through a segment and hear exactly where the narration lands without
+    so you can drag through a sequence and hear exactly where the narration lands without
     starting playback. Two channels can play the same file at once as independent voices,
     which is how overlapping ambience beds behave on device too.</p>
     <p>Audio clips trim like video: drag their edges, or mark a range in the
@@ -100,7 +100,7 @@
       <li><p><b>Right-click the track header</b> in the Audio section, the header showing
       the channel's current name.</p></li>
       <li><p><b>Enter the new name.</b> Maestro Studio updates every Play Audio, Stop Audio, and
-      Fade Audio in the segment that referenced the old name, along with any triggers that
+      Fade Audio in the sequence that referenced the old name, along with any triggers that
       wait on the channel finishing.</p></li>
     </ol>
     <p>Because every reference moves together, a rename can never orphan a Stop or a Fade.

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Presentation modes &amp; backdrops — Maestro Handbook</title>
-<meta name="description" content="Choose how each segment meets the viewer (Immersive, Mixed, or Windowed) and wrap immersive scenes in 360° video or USDZ backdrops.">
+<meta name="description" content="Choose how each sequence meets the viewer (Immersive, Mixed, or Windowed) and wrap immersive scenes in 360° video or USDZ backdrops.">
 <link rel="icon" type="image/png" href="/assets/icon-256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,12 @@
   <article class="doc-article" data-page="presentation-modes">
     <h1>Presentation modes &amp; backdrops</h1>
     <p class="doc-lede">
-      Every segment chooses how it meets the viewer: fully immersive, mixed into the real room, or
+      Every sequence chooses how it meets the viewer: fully immersive, mixed into the real room, or
       in a plain window. Immersive scenes can also wrap themselves in a backdrop.
     </p>
 
     <h2>The three modes</h2>
-    <p>Set a segment's presentation mode with the three-way picker in the segment inspector:</p>
+    <p>Set a sequence's presentation mode with the three-way picker in the sequence inspector:</p>
     <table>
       <thead><tr><th>Mode</th><th>What the viewer experiences</th><th>Best for</th></tr></thead>
       <tbody>
@@ -37,15 +37,15 @@
         space at all.</td><td>Intros, menus, epilogues, calm framing beats</td></tr>
       </tbody>
     </table>
-    <p>Because the mode is per-<a href="/docs/chapters-and-segments.html">segment</a>, a chapter can
+    <p>Because the mode is per-<a href="/docs/chapters-and-sequences.html">sequence</a>, a chapter can
     arc from a window, into the room, into another world, and back. The player handles every
-    transition as playback moves from segment to segment.</p>
+    transition as playback moves from sequence to sequence.</p>
 
     <h2>Switching rules</h2>
     <p>Some mode switches adjust your backdrop, because not every backdrop makes sense in every
     mode:</p>
     <ul>
-      <li><b>→ Windowed</b> clears the segment's backdrop. There's no immersive space around a
+      <li><b>→ Windowed</b> clears the sequence's backdrop. There's no immersive space around a
       window, so there's nothing for a backdrop to wrap.</li>
       <li><b>→ Mixed</b> drops a <em>video</em> backdrop but keeps a USDZ one. A video skybox is a
       sphere around the viewer; in mixed mode it would obscure the passthrough view of the real
@@ -60,12 +60,12 @@
     </div>
 
     <h2>The backdrop picker</h2>
-    <p>When a segment is Immersive or Mixed, the inspector shows a backdrop picker below the mode
+    <p>When a sequence is Immersive or Mixed, the inspector shows a backdrop picker below the mode
     control. Backdrops come from the sidebar's Backdrops section, so mark a video or USDZ with
     <b>Mark as Backdrop</b> first (see <a href="/docs/assets-and-folders.html">Assets &amp;
     folders</a>). The choices:</p>
     <ul>
-      <li><b>None</b>: no backdrop; the segment plays against the empty space (Immersive) or the
+      <li><b>None</b>: no backdrop; the sequence plays against the empty space (Immersive) or the
       real room (Mixed).</li>
       <li><b>Video skybox</b>: an interior-facing sphere that plays a video around the viewer, with
       three sub-controls:
@@ -75,7 +75,7 @@
           multiview format for true spatial video).</li>
           <li><b>Field</b> sets coverage: <b>360°</b> fully surrounds the viewer; <b>180°</b> fills
           the front hemisphere, right for VR180 footage.</li>
-          <li><b>Loop</b> repeats the video for as long as the segment runs.</li>
+          <li><b>Loop</b> repeats the video for as long as the sequence runs.</li>
         </ul>
       </li>
       <li><b>USDZ scene</b>: a 3D environment loaded around the viewer, such as a room, a landscape,
@@ -90,7 +90,7 @@
 
     <h2>Previewing backdrops in Maestro Studio</h2>
     <p>You don't need a headset to check a backdrop. Click the <b>globe</b> toggle in the top-right
-    corner of Maestro Studio's viewport and the selected segment's backdrop renders right in the editor —
+    corner of Maestro Studio's viewport and the selected sequence's backdrop renders right in the editor —
     a playing interior video sphere or the loaded USDZ scene, seen from the viewer's position. Orbit
     the viewport camera to inspect seams, horizon height, and framing. The toggle remembers its
     state between launches, so leave it on if you're deep in backdrop work.</p>
@@ -105,7 +105,7 @@
     <p>A few practical pairings: 360° looping video plus spatial ambience makes a strong ambient
     installation; Mixed mode with USDZ props suits guided tours where the real room matters;
     Immersive with an MV-HEVC skybox is the showcase setting for spatial-video storytelling. Gate
-    the transition into your most immersive segment on a <a href="/docs/gates.html">tap</a> so the
+    the transition into your most immersive sequence on a <a href="/docs/gates.html">tap</a> so the
     viewer chooses the moment they cross over.</p>
   </article>
 </main>

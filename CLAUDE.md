@@ -54,11 +54,13 @@ format/runtime.
   the Mac app does is **Maestro Studio**. Never bare "Studio" or "Vision" as app names.
 - Wordmark renders in **title case**, never all-caps. Docs title pattern:
   "… — Maestro Handbook".
-- Document model vocabulary (unchanged): a **chapter** contains **segments** → **steps**
-  → **actions**; segments carry animation tracks, a presentation mode
-  (Immersive/Mixed/Windowed), an optional backdrop; steps can have **gates** (Tap /
-  Gaze at Entity / Approach Entity / Grab Entity + optional timeout and prompt).
-  Orchestrator and Either gate types are STILL unannounced — they must not appear.
+- Document model vocabulary (format v3, adopted sitewide 2026-08-12): a **chapter**
+  contains **sequences** → **steps** → **actions**; sequences carry animation tracks,
+  a presentation mode (Immersive/Mixed/Windowed), an optional backdrop; steps can
+  have **gates** (Tap / Gaze at Entity / Approach Entity / Grab Entity + optional
+  timeout and prompt). "Segment" is the RETIRED v2 word — fix on sight (exception:
+  "segmented picker", the UI control). Orchestrator and Either gate types are STILL
+  unannounced — they must not appear.
 - **Positioning (2026-08-12): Maestro is NOT publicly released.** The site onboards
   founding users via mailto:hello@maestrostud.io (homepage `#early-access` section).
   No download links, no pricing, no public "get the app" CTAs. Docs may still describe

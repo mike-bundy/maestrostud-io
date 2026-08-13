@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Animation overview — Maestro Handbook</title>
-<meta name="description" content="How keyframe animation works in Maestro: segment-level tracks, ten channels per entity, one evaluation engine across Maestro Studio, Maestro Vision, and the player.">
+<meta name="description" content="How keyframe animation works in Maestro: sequence-level tracks, ten channels per entity, one evaluation engine across Maestro Studio, Maestro Vision, and the player.">
 <link rel="icon" type="image/png" href="/assets/icon-256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,17 @@
   <article class="doc-article" data-page="animation-overview">
     <h1>Animation overview</h1>
     <p class="doc-lede">
-      Keyframe animation in Maestro lives on the segment, not inside steps,
+      Keyframe animation in Maestro lives on the sequence, not inside steps,
       so your curves stay put no matter how you rearrange the events around them.
     </p>
 
-    <h2>Animation is a segment-level layer</h2>
-    <p>A chapter is built from segments, and each segment carries two independent layers.
+    <h2>Animation is a sequence-level layer</h2>
+    <p>A chapter is built from sequences, and each sequence carries two independent layers.
     Steps and their actions are the <b>event</b> layer: reveals, hides, video, audio, gates.
-    Keyframe animation is a separate <b>motion</b> layer that belongs to the segment itself:
-    every animated entity gets its own animation track, and keys sit at absolute segment time,
-    measured in seconds from the start of the segment.</p>
-    <p>Because keys are timed against the segment rather than any step, curves cross step
+    Keyframe animation is a separate <b>motion</b> layer that belongs to the sequence itself:
+    every animated entity gets its own animation track, and keys sit at absolute sequence time,
+    measured in seconds from the start of the sequence.</p>
+    <p>Because keys are timed against the sequence rather than any step, curves cross step
     boundaries freely. Retiming a step, splitting one, or reordering actions never bends or
     breaks a curve — a key at 4.5 seconds stays at 4.5 seconds. Motion and events only meet
     where you want them to.</p>
@@ -67,10 +67,10 @@
     they should be.</p>
 
     <h2>The clock is the authored clock</h2>
-    <p>Animation runs on the segment's authored time, not the wall clock. When playback stops
+    <p>Animation runs on the sequence's authored time, not the wall clock. When playback stops
     at a <a href="/docs/gates.html">gate</a> or a pause, the authored clock stops too. Every
     curve holds its pose at the boundary instead of running ahead, and when the audience
-    proceeds, motion resumes from exactly that frame. A ninety-second segment behaves the same
+    proceeds, motion resumes from exactly that frame. A ninety-second sequence behaves the same
     whether the audience lingers at a gate for two seconds or two minutes.</p>
 
     <h2>Keyframe lanes on the timeline</h2>
@@ -85,7 +85,7 @@
     they always agree.</p>
 
     <h2>Where you edit animation</h2>
-    <p>In Maestro Studio, select an entity within a segment and open the <b>Animation</b> card in the
+    <p>In Maestro Studio, select an entity within a sequence and open the <b>Animation</b> card in the
     inspector, which hosts <a href="/docs/graph-editor.html">the graph editor</a> for shaping
     curves alongside Set Key and auto-key controls (see
     <a href="/docs/keyframes-and-autokey.html">Keyframes &amp; auto-key</a>). In Maestro Vision, the
