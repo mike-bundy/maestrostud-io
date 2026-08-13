@@ -444,18 +444,35 @@ body::after {
 }
 .vp-play {
   position: relative;
-  width: clamp(56px, 7vw, 84px);
+  width: clamp(56px, 6.5vw, 76px);
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 1.5px solid rgba(226, 231, 237, 0.22);
-  background: rgba(12, 17, 29, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(226, 231, 237, 0.75);
+  border: 1px solid rgba(143, 169, 226, 0.5);
+  background:
+    radial-gradient(circle at 32% 28%, rgba(143, 169, 226, 0.22), transparent 60%),
+    rgba(12, 17, 29, 0.6);
+  box-shadow:
+    0 0 34px rgba(143, 169, 226, 0.22),
+    inset 0 0 20px rgba(143, 169, 226, 0.1);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
   margin-bottom: 8px;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
 }
-.vp-play svg { width: 42%; height: 42%; margin-left: 6%; }
+.vp:hover .vp-play {
+  border-color: rgba(143, 169, 226, 0.85);
+  box-shadow:
+    0 0 46px rgba(143, 169, 226, 0.38),
+    inset 0 0 24px rgba(143, 169, 226, 0.16);
+}
+.vp-play svg {
+  width: 36%;
+  height: 36%;
+  display: block;
+  transform: translateX(8%);
+  filter: drop-shadow(0 0 8px rgba(143, 169, 226, 0.5));
+}
 .vp-badge {
   position: relative;
   font-family: var(--font-mono);
