@@ -76,7 +76,7 @@ from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`): all-co
 navy / steel / silver, no warm tones. The icon is the brand mark everywhere; no SVG
 logo. Exceptions to the palette rule: the `.cs-band` ChapterScript guest section
 hardcodes the sister site's slate/mint tokens on purpose; chapters 01/05 use
-`.chapter-blue` (reality-r film-blue field, white ink) and chapter 03 uses
+`.chapter-blue` (reality-r film-blue field, white ink) and chapters 03/07 use
 `.chapter-light` (pale steel field, dark ink). Both are scoped variable
 overrides that flip ink, accents and gradients, and both re-declare `color`
 so descendants re-resolve the scoped ink. Three section moods total: dark

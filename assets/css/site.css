@@ -1468,3 +1468,20 @@ section.block.chapter-blue {
   background: rgba(16, 27, 56, 0.5);
   border-color: rgba(240, 246, 255, 0.4);
 }
+
+/* Chapter 07 (Learn) on the light field: docs cards go paper */
+.chapter-light .dcard {
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.38) 60%);
+  border-color: rgba(22, 32, 47, 0.16);
+}
+.chapter-light .dcard:hover {
+  border-color: rgba(61, 94, 166, 0.55);
+  box-shadow: 0 26px 50px rgba(22, 32, 47, 0.22);
+}
+.chapter-light .dcard::after {
+  background: radial-gradient(circle, rgba(61, 94, 166, 0.1), transparent 65%);
+}
+.chapter-light .dc-kicker {
+  background: rgba(61, 94, 166, 0.1);
+  border-color: rgba(61, 94, 166, 0.3);
+}
