@@ -109,7 +109,7 @@ body::after {
   font-weight: 500;
   letter-spacing: 0.015em;
 }
-.nav-brand .mark { width: 32px; height: 32px; flex: none; border-radius: 50%; box-shadow: 0 0 14px rgba(156, 140, 242, 0.35); }
+.nav-brand .mark { width: 34px; height: 34px; flex: none; filter: drop-shadow(0 0 8px rgba(156, 140, 242, 0.4)); }
 .nav-links {
   display: flex;
   align-items: center;
@@ -835,10 +835,12 @@ h2.in-view .w { opacity: 1; transform: none; }
 }
 .final-cta .cta-mark {
   position: relative;
-  width: 118px; height: 118px;
+  width: 132px; height: 132px;
   margin: 0 auto 34px;
-  border-radius: 50%;
-  box-shadow: 0 0 70px rgba(156, 140, 242, 0.5), 0 0 140px rgba(243, 207, 154, 0.25);
+  /* the macOS icon carries its own rounded-square shape and padding;
+     drop-shadow follows the alpha instead of masking to a circle */
+  filter: drop-shadow(0 0 34px rgba(156, 140, 242, 0.55))
+          drop-shadow(0 0 90px rgba(243, 207, 154, 0.3));
 }
 .final-cta h2 {
   position: relative;
@@ -886,7 +888,7 @@ footer {
   align-items: center;
   gap: 12px;
 }
-.footer-brand .mark { width: 28px; height: 28px; border-radius: 50%; }
+.footer-brand .mark { width: 30px; height: 30px; }
 .footer-tag {
   margin-top: 16px;
   max-width: 34ch;
