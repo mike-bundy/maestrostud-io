@@ -1458,3 +1458,13 @@ section.block.chapter-blue {
 .rail a.active i {
   box-shadow: 0 0 10px rgba(212, 219, 229, 0.7), 0 1px 4px rgba(8, 15, 30, 0.55);
 }
+
+/* Chapter 05 shares the blue treatment; its cards adapt to the field */
+.chapter-blue .gcard {
+  background: rgba(16, 27, 56, 0.35);
+  border-color: rgba(240, 246, 255, 0.2);
+}
+.chapter-blue .gcard:hover {
+  background: rgba(16, 27, 56, 0.5);
+  border-color: rgba(240, 246, 255, 0.4);
+}
