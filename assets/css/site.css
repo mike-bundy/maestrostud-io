@@ -1518,3 +1518,6 @@ section.block.chapter::before {
 
 /* the scroll cue fades via JS as the film arrives; ease the steps */
 .scroll-cue { transition: opacity 0.2s linear; }
+
+/* nav brand: full name on desktop, just Maestro on mobile */
+@media (max-width: 900px) { .nav-brand .brand-ext { display: none; } }
