@@ -1296,3 +1296,31 @@ a.fapp:hover img { transform: scale(1.07) rotate(-2deg); }
   .fpass, .fpass::after, .fpass-icon { transition: none; }
   .fpass:nth-child(2), .fpass:nth-child(3) { transform: none; }
 }
+
+/* ---- Tear-here rule above the founding passes ---- */
+.tear-rule {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 40px 0 30px;
+  color: var(--ink-faint);
+}
+.tear-rule i {
+  flex: 1;
+  height: 0;
+  border-top: 1.5px dashed rgba(226, 231, 237, 0.22);
+}
+.tear-rule svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  color: var(--peri);
+  transform: rotate(180deg); /* blades trailing the cut, moving left to right */
+  opacity: 0.9;
+}
+.tear-rule span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
