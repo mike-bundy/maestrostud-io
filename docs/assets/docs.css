@@ -38,7 +38,7 @@ body.docs {
   font-size: 10px;
   letter-spacing: 0.2em;
   color: var(--peri);
-  border: 1px solid rgba(156, 140, 242, 0.35);
+  border: 1px solid rgba(143, 169, 226, 0.35);
   border-radius: 100px;
   padding: 2.5px 9px;
   margin-left: 4px;
@@ -62,8 +62,8 @@ body.docs {
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .docs-search input:focus {
-  border-color: rgba(156, 140, 242, 0.55);
-  box-shadow: 0 0 0 3px rgba(156, 140, 242, 0.12);
+  border-color: rgba(143, 169, 226, 0.55);
+  box-shadow: 0 0 0 3px rgba(143, 169, 226, 0.12);
 }
 .docs-search input::placeholder { color: var(--ink-faint); }
 .docs-search .s-icon {
@@ -106,7 +106,7 @@ body.docs {
 }
 .search-results a:last-child { border-bottom: none; }
 .search-results a:hover, .search-results a.sel {
-  background: rgba(156, 140, 242, 0.09);
+  background: rgba(143, 169, 226, 0.09);
 }
 .search-results .sr-title { font-size: 14px; font-weight: 600; }
 .search-results .sr-title em { font-style: normal; color: var(--gold); }
@@ -191,12 +191,12 @@ body.docs {
   border-radius: 0 8px 8px 0;
   transition: color 0.2s ease, background 0.2s ease;
 }
-.docs-sidebar a:hover { color: var(--ink); background: rgba(240, 236, 249, 0.04); }
+.docs-sidebar a:hover { color: var(--ink); background: rgba(226, 231, 237, 0.04); }
 .docs-sidebar a.current {
   color: var(--gold);
   font-weight: 500;
   border-left-color: var(--peri);
-  background: rgba(156, 140, 242, 0.07);
+  background: rgba(143, 169, 226, 0.07);
 }
 
 /* ---- Main article ---- */
@@ -260,7 +260,7 @@ body.docs {
 .doc-article p b, .doc-article p strong, .doc-article li b, .doc-article li strong { color: var(--ink); font-weight: 500; }
 .doc-article a:not(.doc-nav-card) {
   color: var(--gold);
-  border-bottom: 1px solid rgba(243, 207, 154, 0.35);
+  border-bottom: 1px solid rgba(201, 209, 220, 0.35);
   transition: border-color 0.2s ease;
 }
 .doc-article a:not(.doc-nav-card):hover { border-bottom-color: var(--gold); }
@@ -275,8 +275,8 @@ body.docs {
 .doc-article code {
   font-family: var(--font-mono);
   font-size: 0.86em;
-  background: rgba(243, 207, 154, 0.08);
-  border: 1px solid rgba(243, 207, 154, 0.14);
+  background: rgba(201, 209, 220, 0.08);
+  border: 1px solid rgba(201, 209, 220, 0.14);
   color: var(--gold);
   border-radius: 6px;
   padding: 1.5px 7px;
@@ -331,7 +331,7 @@ body.docs {
   font-weight: 300;
   vertical-align: top;
 }
-.doc-article tr:hover td { background: rgba(240, 236, 249, 0.02); }
+.doc-article tr:hover td { background: rgba(226, 231, 237, 0.02); }
 
 /* Callouts */
 .callout {
@@ -350,7 +350,7 @@ body.docs {
 .callout.tip .co-icon { color: #9dedc7; }
 .callout.note { border-color: rgba(138, 216, 255, 0.25); background: rgba(138, 216, 255, 0.05); }
 .callout.note .co-icon { color: #8ad8ff; }
-.callout.warn { border-color: rgba(243, 207, 154, 0.3); background: rgba(243, 207, 154, 0.06); }
+.callout.warn { border-color: rgba(201, 209, 220, 0.3); background: rgba(201, 209, 220, 0.06); }
 .callout.warn .co-icon { color: var(--gold); }
 
 /* Steps (numbered walkthrough) */
@@ -373,8 +373,8 @@ body.docs {
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--gold);
-  border: 1px solid rgba(243, 207, 154, 0.4);
-  background: rgba(243, 207, 154, 0.06);
+  border: 1px solid rgba(201, 209, 220, 0.4);
+  background: rgba(201, 209, 220, 0.06);
 }
 .steps > li:not(:last-child)::after {
   content: "";
@@ -399,7 +399,7 @@ body.docs {
   padding: 18px 20px;
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
-.doc-nav-card:hover { border-color: rgba(156, 140, 242, 0.45); transform: translateY(-2px); }
+.doc-nav-card:hover { border-color: rgba(143, 169, 226, 0.45); transform: translateY(-2px); }
 .doc-nav-card.next { text-align: right; grid-column: 2; }
 .doc-nav-card.prev { grid-column: 1; }
 .doc-nav-card .dnc-label {
@@ -479,7 +479,7 @@ body.docs {
   background: rgba(20, 18, 42, 0.6);
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
-.dh-card:hover { border-color: rgba(156, 140, 242, 0.4); transform: translateY(-3px); }
+.dh-card:hover { border-color: rgba(143, 169, 226, 0.4); transform: translateY(-3px); }
 .dh-card h3 {
   font-family: var(--font-display);
   font-weight: 500;

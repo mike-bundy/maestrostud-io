@@ -201,8 +201,8 @@
         ctx.beginPath();
         ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
         ctx.fillStyle = warm
-          ? `rgba(243, 207, 154, ${alpha * p.z})`
-          : `rgba(160, 140, 255, ${alpha * p.z * 0.8})`;
+          ? `rgba(214, 222, 233, ${alpha * p.z})`
+          : `rgba(150, 175, 230, ${alpha * p.z * 0.8})`;
         ctx.fill();
       }
 
@@ -215,7 +215,7 @@
           const d2 = dx * dx + dy * dy;
           if (d2 < 9000) {
             const o = (1 - d2 / 9000) * 0.13 * a.z * b.z;
-            ctx.strokeStyle = `rgba(200, 180, 255, ${o})`;
+            ctx.strokeStyle = `rgba(180, 200, 235, ${o})`;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);

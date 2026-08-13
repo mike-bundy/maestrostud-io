@@ -68,22 +68,23 @@ format/runtime.
 - Docs voice: second person, present tense, for creative authors not programmers. No
   Swift type names or source paths (live-sync + format pages may show HTTP/JSON).
 
-## Theme (don't invent new colors)
+## Theme (derived from the real app icon — don't invent new colors)
 
-The indigo palette was originally sampled from the retired storybook app icon. On
-2026-08-12 the icon was replaced with the current mark (`assets/icon-256.png` /
+Palette re-derived 2026-08-12 from the current app icon (`assets/icon-256.png` /
 `icon-512.png`, a navy macOS tile with a silver M monogram around a wireframe cube,
-from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`); the site
-palette deliberately stayed. The icon is the brand mark everywhere; no SVG logo.
-Exception to the palette rule: the `.cs-band` ChapterScript guest section hardcodes
-the sister site's slate/mint tokens on purpose.
+from `~/code/Maestro/MaestroStudio/Assets.xcassets/AppIcon.appiconset/`): all-cool
+navy / steel / silver, no warm tones. The icon is the brand mark everywhere; no SVG
+logo. Exception to the palette rule: the `.cs-band` ChapterScript guest section
+hardcodes the sister site's slate/mint tokens on purpose.
 
-Tokens in `:root` of `assets/css/site.css`: backgrounds `--bg #0d0c1d`, `--bg-2
-#14122a`, `--bg-3 #1d1a38`; text `--ink #f0ecf9`, `--ink-dim #a49ec6`, `--ink-faint
-#6b6591`; accents `--peri #9c8cf2`, `--gold #f3cf9a`, `--sky #6596dc`; gradients
-`--grad-glow` (peri→gold, CTAs), `--grad-aurora` (sky→peri→gold, gradient text).
-Fonts: Fraunces (display), Outfit (body), JetBrains Mono. Dark text on gradient
-buttons is literal `#14102e`. Use the CSS variables for anything new.
+Tokens in `:root` of `assets/css/site.css` (variable NAMES are legacy from the old
+indigo theme; values are current): backgrounds `--bg #0c111d`, `--bg-2 #121a2b`,
+`--bg-3 #1b2438`; text `--ink #eef1f6`, `--ink-dim #9ba5b6`, `--ink-faint #5f6a7e`;
+accents `--peri #8fa9e2` (steel-ice, primary), `--gold #d4dbe5` (platinum silver,
+highlight), `--sky #5e7fbe` (slate blue); gradients `--grad-glow` (steel→silver,
+CTAs), `--grad-aurora` (slate→steel→silver, gradient text). Fonts: Fraunces
+(display), Outfit (body), JetBrains Mono. Dark text on gradient buttons is literal
+`#101623`. Use the CSS variables for anything new.
 
 ## File map
 
